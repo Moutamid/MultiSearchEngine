@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_lightBlue"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout style="@style/style_item_box">
+
+                <TextView
+                    style="@style/style_box_title"
+                    android:text="Smart Surfing Simplified" />
+
+                <LinearLayout style="@style/style_four_items_box">
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="@string/bing_search_text"
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/bing" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Bing" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="@string/yahoo_text"
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/yahoo" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Yahoo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="http://search.aol.com/aol/search?q="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/aol" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="AOL" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="http://en.wikipedia.org/wiki/?search="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/wikipedia" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Wikipedia" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_four_items_box">
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.gramfind.com/test.php?q="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/gramfind" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Gramfind" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.amazon.com/s?k="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/amazon" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Amazon" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.qwant.com/?q="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/qwant" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Qwant" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.startpage.com/do/metasearch.pl?q="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/startpage" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Startpage" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_four_items_box">
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://yippy.com/search?query="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/yippy" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Yippy" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.onesearch.com/yhs/search;?p="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/onesearch" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Onesearch" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.dictionary.com/browse/"
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/dictionary" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Dictionary" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.ecosia.org/search?q="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/ecosia" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Ecosia" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_four_items_box">
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://duckduckgo.com/?q="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/duckduckgo" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="DuckDuckGo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box"
+                        android:visibility="invisible">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:tag="https://www.onesearch.com/yhs/search;?p="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/onesearch" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Onesearch" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box"
+                        android:visibility="invisible">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:tag="https://www.dictionary.com/browse/"
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/dictionary" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Dictionary" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box"
+                        android:visibility="invisible">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:tag="https://www.ecosia.org/search?q="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/ecosia" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Ecosia" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_item_box">
+
+                <TextView
+                    style="@style/style_box_title"
+                    android:text="Effortless Web Exploration" />
+
+                <LinearLayout style="@style/style_four_items_box">
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.sogou.com/web?query="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/sogou" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Sogou" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://peekier.com/#!"
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/peekier" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Peekier" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.ebay.com/sch/i.html?_nkw="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/ebay" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="eBay" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://walmart.com/search/search-ng.do?search_query="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/walmart" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Walmart" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_four_items_box">
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="@string/pricesearch"
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/pricesearcher" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Pricesearcher" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.snapdeal.com/search?keyword="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/snapdeal" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Snapdeal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.target.com/s?searchTerm="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/target" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Target" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://flipkart.com/search?q="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/flipkart" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Flipkart" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_four_items_box">
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.alibaba.com/trade/search?SearchText="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/alibaba" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Alibaba" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://www.picsearch.com/index.cgi?q="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/picsearch" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Picsearch" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://imgur.com/search?q="
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/imgur" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Imgur" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/bg_item_box">
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/bg_item_card"
+                            android:onClick="OnClickFragment"
+                            android:tag="https://photobucket.com/images/"
+                            app:cardBackgroundColor="@color/color_lightBlue"
+                            app:cardCornerRadius="@dimen/item_card_size30">
+
+                            <ImageView
+                                style="@style/bg_item_image"
+                                android:src="@drawable/photobucket" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/item_text_box"
+                            android:text="Photobucket" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
