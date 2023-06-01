@@ -16,5 +16,5 @@ dependencyResolutionManagement {
         jcenter()
     }
 }
-rootProject.name = "MultiSearchEngine"
+rootProject.name = "SearchTap - Multi Search"
 include ':app'
